@@ -31,11 +31,11 @@ env:
   DEFCONFIG_ORIGIN_IMAGE: ""
   DEFCONFIG_FROM_BOOT: false
 
-  KERNELSU_SOURCE : ""
-  KERNELSU_BRANCH : ""
+  KERNELSU_SOURCE : "https://raw.githubusercontent.com/pershoot/KernelSU-Next/dev-susfs/kernel/setup.sh"
+  KERNELSU_BRANCH : "dev-susfs"
 
-  KERNELSU_AUTO_GET : "true"
-  KERNELSU_AUTO_FORK : "next" # xxksu, rsuntk , next, bakasu and sukisu
+  KERNELSU_AUTO_GET : "false"
+  KERNELSU_AUTO_FORK : "" # xxksu, rsuntk , next, bakasu and sukisu
 
   SUSFS_ENABLE : true
   SUSFS_FIXED : false # first run: stock susfs_patch_to_4.19.patch from the builder
